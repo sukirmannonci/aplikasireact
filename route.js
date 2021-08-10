@@ -11,4 +11,6 @@ module.exports = function (app) {
         
     app.route('/tampil/:id')
         .get(json.tampilBerdasarkanId);
+    app.route('/tambah')
+        .post(json.tambahDataMahasiswa);    
 }
