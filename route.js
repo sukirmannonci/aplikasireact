@@ -7,5 +7,8 @@ module.exports = function (app) {
         .get(json.index);
 
     app.route('/tampil')
-        .get(json.tampilSemuaMahasiswa);    
+        .get(json.tampilSemuaMahasiswa);
+        
+    app.route('/tampil/:id')
+        .get(json.tampilBerdasarkanId);
 }
