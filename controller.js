@@ -88,4 +88,4 @@ exports.tampilGroupMatakuliah = function (req, res) {
             response.oknested(rows, res);
         }
     });
-};
+}; 
