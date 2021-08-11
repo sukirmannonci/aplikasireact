@@ -18,5 +18,8 @@ module.exports = function (app) {
         .put(json.ubahDataMahasiswa);   
         
     app.route('/hapus')
-        .delete(json.deleteBerdasarkanId);      
+        .delete(json.deleteBerdasarkanId);    
+        
+    app.route('/tampilmatakuliah')
+        .get(json.tampilGroupMatakuliah);    
 }
