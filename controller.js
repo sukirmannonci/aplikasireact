@@ -77,7 +77,7 @@ exports.deleteBerdasarkanId = function (req, res) {
             response.ok("Berhasil delete data mahasiswa!", res)
         }
     });
-};
+}
 
 // Menampilkan matakuliah group
 exports.tampilGroupMatakuliah = function (req, res) {

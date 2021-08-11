@@ -8,14 +8,14 @@ exports.ok = function (values, rest) {
 
     rest.json(data);
     rest.end();
-}
+};
 
 // Response untuk nested matakuliah
 exports.oknested = function (values, res) {
     // Lakukan akumulasi
     const hasil = values.reduce((akumulasikan, item)=>{
         // Tentukan key group
-        if (akumulasikan(item.nama)) {
+        if (akumulasikan[item.nama]) {
             // Buatlah variabel untuk nama mahasiswa
             const group = akumulasikan[item.nama];
             // Cek jika isi array adalah matakuliah
